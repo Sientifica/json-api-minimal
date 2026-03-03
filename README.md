@@ -60,19 +60,3 @@ composer install
 composer test
 ```
 
-## Publicar en Packagist
-
-1. Publica este repositorio en GitHub (o GitLab/Bitbucket soportado por Packagist).
-2. Crea una cuenta en [packagist.org](https://packagist.org) y presiona "Submit".
-3. Usa la URL del repositorio (ejemplo: `https://github.com/mauricio/json-api-minimal`).
-4. Crea un tag semántico en git (ejemplo: `v1.0.0`) y súbelo:
-   `git tag v1.0.0 && git push origin v1.0.0`
-5. (Opcional recomendado) Configura el webhook de Packagist en tu repo para auto-actualización de versiones.
-
-Nota: En Packagist, la versión se toma de tags git, no del archivo `composer.json`.
-
-## Limitaciones intencionales (mínimo viable)
-
-- No incluye `relationships`, `included`, `links`, `meta`, ni manejo de errores JSON:API.
-- No transforma nombres de atributos.
-- Requiere `id` por cada recurso.
