@@ -1,0 +1,47 @@
+{
+  "name": "sientifica/json-api-minimal",
+  "description": "Minimal JSON:API serializer for arrays and object collections.",
+  "version": "0.1.0",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "jsonapi",
+    "json-api",
+    "serializer",
+    "php",
+    "api"
+  ],
+  "homepage": "https://github.com/Sientifica/json-api-minimal",
+  "authors": [
+    {
+      "name": "@maomuriel"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/Sientifica/json-api-minimal/issues",
+    "source": "https://github.com/Sientifica/json-api-minimal"
+  },
+  "autoload": {
+    "psr-4": {
+      "JsonApiMinimal\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "JsonApiMinimal\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^8.1"
+  },
+  "require-dev": {
+    "illuminate/support": "^11.0 || ^12.0",
+    "phpunit/phpunit": "^10.5"
+  },
+  "scripts": {
+    "test": "phpunit --configuration phpunit.xml.dist"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
